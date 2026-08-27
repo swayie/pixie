@@ -72,7 +72,7 @@ impl Cli {
             return Ok(cli);
         }
 
-        cli.input = input.ok_or_else(|| AppError::usage("missing input file"))?;
+        cli.input = input.ok_or_else(|| AppError::usage("missing input file; see `pixie --help`"))?;
 
         // Validate incompatible flags and required output settings once parsing is complete.
         if cli.terminal && cli.output.is_some() {
