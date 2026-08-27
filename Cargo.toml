@@ -1,0 +1,12 @@
+[package]
+name = "pixie"
+version = "0.1.0"
+edition = "2024"
+description = "A small text-based pixel art renderer"
+license = "MIT"
+
+[[bin]]
+name = "pixie"
+path = "src/main.rs"
+
+[dependencies]
